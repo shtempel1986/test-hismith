@@ -29,6 +29,20 @@ a.link_white
   color: #fff
 .red
   color: $red
+.link_red .fa, .link_white .fa
+  transition-duration: 0.1s
+.link_red:hover .fa, .link_white:hover .fa
+  transform: scale(1.1)
+button
+  transition-duration: 0.2s
+button:hover
+  box-shadow: 4px 4px 5px 1px $header-black
+  transform: scale(1.01)
+button:active
+  box-shadow: none
+  transform: scale(1)
+  transition-duration: .1s
+
 header
   background: url("../img/header__bg.jpg") no-repeat center
   background-size: cover
@@ -51,10 +65,13 @@ h1
   border: solid 2px #fff
   text-transform: uppercase
   padding: 10px 24px
+
 .about
   margin: 55px auto
   h2
     margin: 28px
+  &__text
+    margin: 0 50px
 .history
   h2
     margin: 60px 0 40px
@@ -62,6 +79,8 @@ h1
   p
     text-align: justify
     margin-left: -13px
+  &__img
+    max-width: 100%
 .skills
   margin: 50px auto
   h2
@@ -84,6 +103,7 @@ h1
   margin: -100px
   border: solid 15px $circle-grey
   border-radius: 50%
+  transition-duration: 0.2s
 .circle_red
   border-color: $red
 .circle_75p
@@ -104,10 +124,16 @@ h1
   border-top: solid 15px transparent
   transform: rotate(-19deg)
 
+.skill-item:hover .circle
+  width: 220px
+  height: 220px
+  margin: -110px
+
 .team__heading
   margin: 0 0 20px
 .team-user__img
   margin: 0 0 15px
+  width: 100%
 .team-user__heading
   font-size: 16px
   display: inline-block

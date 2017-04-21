@@ -30,6 +30,35 @@ a.link_white {
 .red {
   color: #ff0000; }
 
+.link_red .fa, .link_white .fa {
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s; }
+
+.link_red:hover .fa, .link_white:hover .fa {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+
+button {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
+
+button:hover {
+  -webkit-box-shadow: 4px 4px 5px 1px #323232;
+          box-shadow: 4px 4px 5px 1px #323232;
+  -webkit-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+          transform: scale(1.01); }
+
+button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s; }
+
 header {
   background: url("../img/header__bg.jpg") no-repeat center;
   background-size: cover;
@@ -61,6 +90,8 @@ h1 {
   margin: 55px auto; }
   .about h2 {
     margin: 28px; }
+  .about__text {
+    margin: 0 50px; }
 
 .history h2 {
   margin: 60px 0 40px;
@@ -69,6 +100,9 @@ h1 {
 .history p {
   text-align: justify;
   margin-left: -13px; }
+
+.history__img {
+  max-width: 100%; }
 
 .skills {
   margin: 50px auto; }
@@ -93,7 +127,9 @@ h1 {
   margin: -100px;
   border: solid 15px #dadada;
   -webkit-border-radius: 50%;
-          border-radius: 50%; }
+          border-radius: 50%;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
 
 .circle_red {
   border-color: #ff0000; }
@@ -130,11 +166,17 @@ h1 {
       -ms-transform: rotate(-19deg);
           transform: rotate(-19deg); }
 
+.skill-item:hover .circle {
+  width: 220px;
+  height: 220px;
+  margin: -110px; }
+
 .team__heading {
   margin: 0 0 20px; }
 
 .team-user__img {
-  margin: 0 0 15px; }
+  margin: 0 0 15px;
+  width: 100%; }
 
 .team-user__heading {
   font-size: 16px;
