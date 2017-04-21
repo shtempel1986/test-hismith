@@ -6,21 +6,22 @@ html
         link(rel="stylesheet" href="css/libs.min.css")
         link(rel="stylesheet" href="css/main.min.css")
     body
-        header
-            ul.header-social.list-inline.list-unstyled
-                li
-                    a(href="#").link_white
-                        i.fa.fa-facebook
-                li
-                    a(href="#").link_white
-                        i.fa.fa-twitter
-                li
-                    a(href="#").link_white
-                        .i.fa.fa-google-plus
-            h1.text-uppercase
-                span.header__text_red Test
-                =" PROJECT"
-            button.header__download Download
+        header.text-center
+            .container
+                ul.header-social.list-inline.list-unstyled
+                    li
+                        a(href="#").link_white
+                            i.fa.fa-facebook
+                    li
+                        a(href="#").link_white
+                            i.fa.fa-twitter
+                    li
+                        a(href="#").link_white
+                            .i.fa.fa-google-plus
+                h1.text-uppercase
+                    span.header__text_red Test
+                    =" PROJECT"
+                button.header__download Download
         main
             .about.container.text-center
                 h2.text-uppercase about us
@@ -28,7 +29,7 @@ html
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut                    aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit.
             .history.container
                 .row
-                    img(src="img/our__img.jpg").col-md-6
+                    img(src="img/our__img.jpg").col-md-6.history__img
                     .col-md-1
                     .col-md-5
                         h2.history__heading Our History
@@ -38,45 +39,55 @@ html
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
             .skills.container.text-center
                 h2.text-uppercase our skills
-                p.skills__text.
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.
+                p.skills__text
+                    |Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    br
+                    |dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.
                 .row
                     .skill-item.col-md-3
-                        .circle.circle-html
+                        .circle
+                        .circle_75p.circle.circle_red
                         h3.skill-item__heading 75%
-                        p.skill-item__text HTMl
+                        p.skill-item__text HTML
                     .skill-item.col-md-3
-                        .circle.circle-css
+                        .circle
+                        .circle_75p.circle.circle_red
+                        .circle_80p.circle.circle_red
                         h3.skill-item__heading 80%
                         p.skill-item__text CSS
                     .skill-item.col-md-3
-                        .circle.circle-wordpress
+                        .circle
+                        .circle_50p.circle.circle_red
+                        .circle_70p.circle.circle_red
                         h3.skill-item__heading 70%
                         p.skill-item__text WORDPRESS
                     .skill-item.col-md-3
-                        .circle.circle-seo
+                        .circle
+                        .circle_75p.circle.circle_red
+                        .circle_85p.circle.circle_red
                         h3.skill-item__heading 85%
                         p.skill-item__text SEO
             .team.container.text-center
-                h2.text-uppercase our team
-                p.
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.
-                .row
+                h2.text-uppercase.team__heading our team
+                p.team__text
+                    |Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    br
+                    |dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.
+                .row.text-left
                     .team-user.col-md-4
-                        img(src="img/team__users.jpg").team-user__img
+                        img(src="img/team__user1.jpg").team-user__img
                         h3.team-user__heading USER #1
+                        ul.team-socials.list-inline.list-unstyled
+                            li
+                                a(href="#").link_red
+                                    i.fa.fa-facebook
+                            li
+                                a(href="#").link_red
+                                    i.fa.fa-twitter
                         p.team-user__text CEO
-                        ul.team-socials.list-inline.list-unstyled
-                            li
-                                a(href="#").link_red
-                                    i.fa.fa-facebook
-                            li
-                                a(href="#").link_red
-                                    i.fa.fa-twitter
                     .team-user.col-md-4
-                        img(src="img/team__users.jpg").team-user__img
+                        img(src="img/team__user2.jpg").team-user__img
                         h3.team-user__heading USER #2
-                        p.team-user__text MARKETING HEAD
                         ul.team-socials.list-inline.list-unstyled
                             li
                                 a(href="#").link_red
@@ -84,10 +95,10 @@ html
                             li
                                 a(href="#").link_red
                                     i.fa.fa-twitter
+                        p.team-user__text MARKETING HEAD
                     .team-user.col-md-4
-                        img(src="img/team__users.jpg").team-user__img
+                        img(src="img/team__user3.jpg").team-user__img
                         h3.team-user__heading USER #3
-                        p.team-user__text PROJECT HEAD
                         ul.team-socials.list-unstyled.list-inline
                             li
                                 a(href="#").link_red
@@ -95,32 +106,36 @@ html
                             li
                                 a(href="#").link_red
                                     i.fa.fa-twitter
-                    .contact.text-center
-                        h2.contact__heading contact us
-                        p.contact__text.
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.
-                        .row.text-left
-                            .contact-details.col-md-6
-                                h3.contact-details__heading.text-uppercase Contact details
-                                p.contact__address
-                                    i.fa.fa-map-marker
-                                    |Stret / House / Zip
-                                p.contact__phone
-                                    i.fa.fa-phone
-                                    |111-111-1111
-                                p.contact__email
-                                    i.fa.i.fa.fa-envelope
-                                    a(href="email@1.com").contact__emailto email@1.com
-                                p.contact-details__text.
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                            form.contact-form.col-md-6
-                                label
-                                    input(name="name" type="text" placeholder="NAME").contact-from__name
-                                label
-                                    input(name="mail" type="text" placeholder="E-MAIL").contact-from__email
-                                label
-                                    textarea(name="subject" placeholder="SUBJECT").contact-from__subject
-                                button(type="submit").contact-from__submit SEND
+                        p.team-user__text PROJECT HEAD
+            .contact.text-center.container
+                h2.contact__heading contact us
+                p.contact__text
+                    |Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                    br
+                    | dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.
+                .row.text-left
+                    .contact-details.col-md-6
+                        h3.contact-details__heading.text-uppercase Contact details
+                        p.contact__address
+                            i.fa.fa-map-marker.red
+                            |Stret / House / Zip
+                        p.contact__phone
+                            i.fa.fa-phone.red
+                            |111-111-1111
+                        p.contact__email
+                            i.fa.i.fa.fa-envelope.red
+                            a(href="email@1.com").contact__emailto email@1.com
+                        p.contact-details__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    form.contact-form.col-md-6
+                        h3.contact-form__heading.text-uppercase send us a message
+                        .row
+                            label(for="name").col-xs-6
+                                input(name="name" type="text" placeholder="NAME" id="name").contact-from__name
+                            label(for="mail").col-xs-6
+                                input(name="mail" type="text" placeholder="E-MAIL" id="mail").contact-from__email
+                            label(for="subject").col-xs-12
+                                textarea(name="subject" placeholder="SUBJECT" id="subject" rows="4").contact-from__subject
+                        button(type="submit").contact-form__submit SEND
         footer.container.text-right
             ul.footer-socials.list-inline.list-unstyled
                 li
